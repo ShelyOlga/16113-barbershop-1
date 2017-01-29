@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
           <div class="container">          
             <div class="index-logo">
                <a href="#">
-               <img src="img/catalog-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+               <img src="img/Logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
                </a>
             </div>
             <nav class="main-navigation">
@@ -36,11 +37,12 @@
             </div>
           </div>
       </header>
-      <div class="submenu">
-          <div class="title-submenu">
+      <main class="container">
+          <div class="submenu">
+           <div class="title-submenu">
               <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-          </div>
-          <div class="breadcrumbs">
+           </div>
+           <div class="breadcrumbs">
               <ul>
                   <li><a href="#"><h2>Главная</h2></a>
                   </li>
@@ -49,112 +51,96 @@
                   <li><a href="#"><h2>Средства для ухода</h2></a>
                   </li>
               </ul>
+           </div>
           </div>
-      </div>
-      <main class="container">
           <section class="catalog">
-              <div class="filters">
-                  <div class="filters-company">
-                      <form action="https://echo.htmlacademy.ru" method="post">
-                        <h3>ПРОИЗВОДИТЕЛИ:</h3>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox" checked>
-                         <label for="subscribe-field-items">Baxter of California
-                          </label><br>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox">
-                         <label for="subscribe-field-items">Mr Natty
-                          </label><br>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox" checked>
-                         <label for="subscribe-field-items">Suavecito
-                          </label><br>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox">
-                         <label for="subscribe-field-items">Malin+Goetz
-                          </label><br>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox">
-                         <label for="subscribe-field-items">Murray’s
-                          </label><br>
-                        <input name="subscribe-company" id="subscribe-field-company" type="checkbox" checked>
-                         <label for="subscribe-field-items">American Crew
-                          </label>  
-                      </form>
-                  </div>
-              </div>
-                  <div class="filters-items">
-                      <form action="https://echo.htmlacademy.ru" method="post">
-                        <h3>ГРУППЫ ТОВАРОВ:</h3>
-                         <label>
-                          <input type="radio" name="company-one" value="p">
-                           Бритвенные принадлежности
-                         </label><br>
-                         <label>
-                          <input type="radio" name="company-one" value="p" checked>
-                           Средства для ухода
-                         </label><br>
-                         <label>
-                          <input type="radio" name="company-one" value="p">
-                           Аксессуары
-                         </label><br>
-                          <input type="submit" value="Показать">
-                   </div>
-              </div>
-              <div class="catalog-items">
-                  <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items1.png" width="220" height="165" alt="item1"></a>
-                   <div class="details">
-                     <p class="items-price">2 900 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>
-                  </div>
-                  <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items2.png" width="220" height="165" alt="item2"></a>
-                   <div class="details">
-                     <p class="items-price">750 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>   
-                  </div>
-                  <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items3.png" width="220" height="165" alt="item3"></a>
-                   <div class="details">
-                     <p class="items-price">290 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>   
-                  </div>
-                  <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items4.png" width="220" height="165" alt="item4"></a>
-                   <div class="details">
-                     <p class="items-price">500 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>
-                   <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items5.png" width="220" height="165" alt="item5"></a>
-                   <div class="details">
-                     <p class="items-price">300 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>
-                   <div class="bg-items">
-                   <a href="#"><img src="img/catalog-items6.png" width="220" height="165" alt="item6"></a>
-                   <div class="details">
-                     <p class="items-price">3 900 РУБ.</p>
-                     <input type="submit" value="КУПИТЬ">
-                   </div>     
-                  </div>     
-              </div>
+             <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
+               <h3>ПРОИЗВОДИТЕЛИ:</h3>
+               <input name="subscribe-company" id="subscribe-field-company1" type="checkbox" checked>
+               <label for="subscribe-field-company1">Baxter of California</label><br>
+               <input name="subscribe-company" id="subscribe-field-company2" type="checkbox">
+               <label for="subscribe-field-company2">Mr Natty</label><br>
+               <input name="subscribe-company" id="subscribe-field-company3" type="checkbox" checked>
+               <label for="subscribe-field-company3">Suavecito</label><br>
+               <input name="subscribe-company" id="subscribe-field-company4" type="checkbox">
+               <label for="subscribe-field-company4">Malin+Goetz</label><br>
+               <input name="subscribe-company" id="subscribe-field-company5" type="checkbox">
+               <label for="subscribe-field-company5">Murray’s</label><br>
+               <input name="subscribe-company" id="subscribe-field-company6" type="checkbox" checked>
+               <label for="subscribe-field-company6">American Crew</label><br>
+              </fieldset>
+              <fieldset>
+               <h3>ГРУППЫ ТОВАРОВ:</h3>
+               <input name="subscribe-item" id="subscribe-field-item1" type="radio" value="p">
+               <label for="subscribe-field-item1">Бритвенные принадлежности</label><br>
+               <input name="subscribe-item" id="subscribe-field-item2" type="radio" value="p" checked>
+               <label for="subscribe-field-item2">Средства для ухода</label><br>
+               <input name="subscribe-item" id="subscribe-field-item3" type="radio" value="p" >
+               <label for="subscribe-field-item3">Аксессуары</label><br>
+               <button type="submit">КУПИТЬ</button>
+              </fieldset>    
+             </form>
+             <div class="catalog-items">
+               <div class="bg-items">
+                 <a href="#"><img src="img/items1.jpg" width="220" height="165" alt="item1"></a>
+               <div class="details">
+                 <p class="items-price">2 900 РУБ.</p>
+                 <a href="#">КУПИТЬ</a>
+               </div>
+               </div>
+               <div class="bg-items">
+                <a href="#"><img src="img/items2.jpg" width="220" height="165" alt="item2"></a>
+               <div class="details">
+                 <p class="items-price">750 РУБ.</p>
+                 <a href="#">КУПИТЬ</a>
+               </div>   
+               </div>
+               <div class="bg-items">
+                <a href="#"><img src="img/items3.jpg" width="220" height="165" alt="item3"></a>
+               <div class="details">
+                <p class="items-price">290 РУБ.</p>
+                <a href="#">КУПИТЬ</a>
+               </div>   
+               </div>
+               <div class="bg-items">
+                <a href="#"><img src="img/items4.jpg" width="220" height="165" alt="item4"></a>
+               <div class="details">
+                <p class="items-price">500 РУБ.</p>
+                <a href="#">КУПИТЬ</a>
+               </div>   
+               </div>
+               <div class="bg-items">
+                <a href="#"><img src="img/items5.jpg" width="220" height="165" alt="item5"></a>
+               <div class="details">
+                 <p class="items-price">300 РУБ.</p>
+                 <a href="#">КУПИТЬ</a>
+               </div>   
+               </div>
+               <div class="bg-items">
+                <a href="#"><img src="img/items6.jpg" width="220" height="165" alt="item6"></a>
+               <div class="details">
+                <p class="items-price">3 900 РУБ.</p>
+                <a href="#">КУПИТЬ</a>
+               </div>     
+              </div>     
+            </div>
           </section>
-          
+          <div class="pagination">
+           <a href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+         </div>
       </main>
-      <div class="pagination">
-       <a href="#">1</a>
-       <a href="#">2</a>
-       <a href="#">3</a>
-       <a href="#">4</a>
-      </div>
       <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
+       <div class="footer">
+        <address class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
-        </section>
+        </address>
         <section class="footer-social">
           <p>Давайте дружить!</p>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -165,8 +151,7 @@
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
-      </div>
+       </div>
     </footer>         
-    
-  </body>
+    </body>
 </html>
